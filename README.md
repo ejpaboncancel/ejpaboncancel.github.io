@@ -1,2 +1,2 @@
 # READ ME
-Personal webpage for Eric J. Pabón Cancel
+Academic website of Eric J. Pabón Cancel
