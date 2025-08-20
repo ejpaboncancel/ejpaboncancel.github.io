@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,117 +8,168 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="ProfilePic.jpg" />
+    <script>
+      // On page load, apply saved theme
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+
+      function toggleTheme() {
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        }
+      }
+    </script>
   </head>
-  <body class="">
-    <div class="container mx-auto px-12 py-8">
-      <div
-        class="bg-white flex flex-col space-y-12 rounded-lg p-8 md:px-24 px-8"
-      >
-        <div class="text-center -mb-6">
-          <img
-            class="w-96 mb-3 mx-auto object-contain"
-            src="ProfilePic.jpg"
-            alt="Eric J. Pabón Cancel"
-          />
-          <br>
-          <h1 class="text-3xl font-semibold mt-2">Eric J. Pabón Cancel</h1>
-          <h2 class="text-xl font-medium text-black-600">
-            Ph.D. Student, Department of Mathematics <br>
-            Mathematical Sciences Building, Office 609 <br>
-            Purdue University, West Lafayette
-          </h2>
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+      <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#about" class="text-xl font-bold text-green-700 dark:text-green-400">
+          E.J. Pabón Cancel
+        </a>
+        <div class="flex items-center space-x-4 text-sm font-medium">
+          <a href="#about" class="hover:text-green-600 dark:hover:text-green-400">About</a>
+          <a href="#contact" class="hover:text-green-600 dark:hover:text-green-400">Contact & CV</a>
+          <a href="#research" class="hover:text-green-600 dark:hover:text-green-400">Research</a>
+          <a href="#papers" class="hover:text-green-600 dark:hover:text-green-400">Papers</a>
+          <a href="#origami" class="hover:text-green-600 dark:hover:text-green-400">Origami</a>
+          <!-- Dark Mode Toggle -->
+          <button
+            onclick="toggleTheme()"
+            class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+            title="Toggle Dark Mode"
+          >
+            <span id="theme-icon" class="text-gray-800 dark:text-gray-200">🌙</span>
+          </button>
         </div>
-        
-        <div class="text-center mb-3">
-          <h3 class="text-2xl font-semibold mb-2">About Me</h3>
-          <p class="text-black-600" align="justify">
-  I am a Mathematics Ph.D. student at <a href="https://www.purdue.edu">Purdue University</a>. During the summer of 2025, I was a research intern in the Computing & Information Science Research Foundation at Sandia National Laboratories-California 
-  as part of the <a class="text-green-600 hover:underline" href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/">Universities Research Association-Sandia Graduate Student Summer Fellowship</a>. I am a former research intern 
-  at the 2023 MIT Lincoln Laboratory Summer Research Program, where I researched machine learning under Group 39 of Division 3, as part of the <a class="text-green-600 hover:underline" href="https://www.gemfellowship.org">National GEM Consortium</a> 
-  Fellowship Employer Internship. In the summer of 2022, I was a participant at the <a class="text-green-600 hover:underline" href="https://icerm.brown.edu/program/summer@icerm/si-22">Summer@ICERM2022: Computational Combinatorics</a> REU Program at Brown University, where I researched Parking Functions and Algebraic Combinatorics. 
-  In the summer of 2021, I participated in the East Tennessee State Universtiy & University of Puerto Rico at Ponce REU Program in Algebraic Coding Theory, Probability and Combinatorics, where I researched Algebraic-Geometric Error-Correcting 
-  Codes and Linear Error-Correcting Codes. I earned my Bachelor of Science degree in Mathematics  at the University of Puerto Rico, Mayagüez Campus <a class="text-green-600 hover:underline" href="https://www.uprm.edu/portada/">(UPRM)</a>. Some of my hobbies include origami, 
-  watching pop-culture related movies and shows, enjoying nature, and playing percussion instruments. If you have any questions, feel free to contact me through email or LinkedIn.
+      </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-12 space-y-12">
+      <!-- Profile -->
+      <section id="about" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 text-center">
+        <img
+          class="w-48 h-48 rounded-full mx-auto object-cover shadow-md"
+          src="ProfilePic.jpg"
+          alt="Eric J. Pabón Cancel"
+        />
+        <h1 class="text-3xl font-bold mt-4">Eric J. Pabón Cancel</h1>
+        <h2 class="text-lg text-gray-600 dark:text-gray-400 mt-2">
+          Ph.D. Student, Department of Mathematics <br />
+          Mathematical Sciences Building, Office 609 <br />
+          Purdue University, West Lafayette
+        </h2>
+        <div class="prose dark:prose-invert text-justify mx-auto mt-6">
+          <p>
+            I am a Mathematics Ph.D. student at
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://www.purdue.edu">Purdue University</a>.
+            During the summer of 2025, I was a research intern at Sandia National Laboratories–California
+            through the
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/">URA-Sandia Graduate Student Summer Fellowship</a>.
+            I am a former research intern at the
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://www.gemfellowship.org">National GEM Consortium</a>
+            Fellowship Employer Internship with MIT Lincoln Laboratory (2023).
+            Earlier, I participated in the
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://icerm.brown.edu/program/summer@icerm/si-22">Summer@ICERM 2022</a>
+            REU and in the East Tennessee State University & UPR–Ponce REU (2021).
+          </p>
+          <p>
+            I earned my B.Sc. in Mathematics at the
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://www.uprm.edu/portada/">University of Puerto Rico, Mayagüez Campus (UPRM)</a>.
+            My hobbies include origami, watching pop-culture related movies and shows, enjoying nature,
+            and playing percussion instruments.
           </p>
         </div>
-        <hr></hr>
+      </section>
 
-        <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Contact and CV</h3>
-          <p class="text-black-600">
-            Email: <a class="text-green-600 hover:underline" href="mailto: epabonca@purdue.edu">epabonca@purdue.edu</a> <br>
-            LinkedIn Profile: <a class="text-green-600 hover:underline" href="https://www.linkedin.com/in/ericjpaboncancel/">linkedin.com/in/ericjpaboncancel/</a> <br>
-            <a class="text-green-600 hover:underline" href="CV_EricJPabonCancel.pdf">Curriculum Vitae</a>
-          </p>
+      <!-- Contact -->
+      <section id="contact" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold mb-4">Contact and CV</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          📧 Email:
+          <a class="text-green-600 dark:text-green-400 hover:underline" href="mailto:epabonca@purdue.edu">epabonca@purdue.edu</a><br />
+          💼 LinkedIn:
+          <a class="text-green-600 dark:text-green-400 hover:underline" href="https://www.linkedin.com/in/ericjpaboncancel/">linkedin.com/in/ericjpaboncancel</a><br />
+          📄 <a class="text-green-600 dark:text-green-400 hover:underline" href="CV_EricJPabonCancel.pdf">Curriculum Vitae</a>
+        </p>
+      </section>
+
+      <!-- Research Interests -->
+      <section id="research" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold mb-4">Research Interests</h3>
+        <p class="text-gray-700 dark:text-gray-300 text-justify">
+          My research interests lie in Dynamical Systems, Machine Learning, and Computational & Applied Mathematics.
+          During my bachelor's studies, I also explored Number Theory, Abstract Algebra, and Combinatorics.
+        </p>
+      </section>
+
+      <!-- Papers -->
+      <section id="papers" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold mb-4">Papers and Preprints</h3>
+        <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+          <li>
+            S. Polk, E.J. Pabón-Cancel, R. Paleja, K. Chestnut-Chang, R. Jensen, and M. Ramirez.
+            <em>Unsupervised Behavior Inference From Human Action Sequences</em>.
+            IEEE CoG 2024, Milan, Italy. <br />
+            DOI:
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://doi.org/10.1109/CoG60054.2024.10645587">10.1109/CoG60054.2024.10645587</a>.
+          </li>
+          <li>
+            A. Allen, E.J. Pabón-Cancel, L. Polanco, and F. Piñero-Gonzalez.
+            <em>Improving the Dimension Bound of Hermitian-Lifted Codes</em>.
+            arXiv:
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://arxiv.org/abs/2302.01557">2302.01557</a>.
+          </li>
+          <li>
+            D. Chen, P.E. Harris, J.C. Martinez Mori, E.J. Pabón-Cancel, and G. Sargent.
+            <em>Permutation Invariant Parking Assortments</em>.
+            <strong>Enumerative Combinatorics and Applications</strong>, 4:1 (2024). <br />
+            DOI:
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://doi.org/10.54550/ECA2024V4S1R4">10.54550/ECA2024V4S1R4</a>.
+            arXiv:
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://arxiv.org/abs/2211.01063">2211.01063</a>.
+          </li>
+          <li>
+            I. Byrne, N. Dodson, R. Lynch, E.J. Pabón-Cancel, and F. Piñero-Gonzalez.
+            <em>Improving the Minimum Distance Bound of Trace Goppa Codes</em>.
+            <strong>Designs, Codes and Cryptography</strong>, 91, 2649–2663 (2023). <br />
+            DOI:
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://doi.org/10.1007/s10623-023-01216-6">10.1007/s10623-023-01216-6</a>.
+            arXiv:
+            <a class="text-green-600 dark:text-green-400 hover:underline" href="https://arxiv.org/abs/2201.03741">2201.03741</a>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Origami -->
+      <section id="origami" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold mb-6">Origami</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <img class="rounded-lg shadow-md mx-auto" src="Rose.jpg" alt="Origami Rose" />
+          <img class="rounded-lg shadow-md mx-auto" src="Mammoth.jpg" alt="Origami Mammoth" />
         </div>
-        <hr></hr>
-
-        <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Research Interests</h3>
-          <p class="text-black-600" align="justify">
-            My research interests currently lie in Dynamical Systems, Machine Learning, and Computational & Applied Math. During my bachelor's degree however, I did venture into more theoretical research areas,
-            such as Number Theory, Abstract Algebra and Combinatorics.
-          </p>
-        </div>
-        <hr></hr>
-
-        <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Papers and Preprints</h3>
-          <ul class="list-disc pl-5 text-black-600">
-            <li>S. Polk, E.J. Pabon-Cancel, R. Paleja, K. Chestnut-Chang, R. Jensen and M. Ramirez. 
-              Unsupervised Behavior Inference From Human Action Sequences.
-              <i>2024 IEEE Conference on Games (CoG), Milan, Italy, 2024, pp. 1-8</i>.</li>
-              DOI: <a href="https://doi.org/10.1109/CoG60054.2024.10645587"> https://doi.org/10.1109/CoG60054.2024.10645587</a>.
-            <li>A. Allen, E.J. Pabon-Cancel, L. Polanco and F. Piñero-Gonzalez. 
-              Improving the Dimension Bound of Hermitian-Lifted Codes. 
-             <!-- <i>Submitted</i>.<br> -->
-              arXiv: <a href="https://arxiv.org/abs/2302.01557"> https://arxiv.org/abs/2302.01557</a>.</li>
-            <li>D. Chen, P.E. Harris, J. Carlos Martinez Mori, E.J. Pabon-Cancel, and G. Sargent. 
-              Permutation Invariant Parking Assortments.
-              <i>Enumerative Combinatorics and Applications</i>. <bold>4:1</bold>, 1-25 (2024). #S2R4. <br>
-              DOI: <a href="https://doi.org/10.54550/ECA2024V4S1R4"> https://doi.org/10.54550/ECA2024V4S1R4</a>.
-              arXiv: <a href="https://arxiv.org/abs/2211.01063"> https://arxiv.org/abs/2211.01063</a>.</li>
-            <li>I. Byrne, N. Dodson, R. Lynch, E.J. Pabon-Cancel and F. Piñero-Gonzalez. 
-              Improving the Minimum Distance Bound of Trace Goppa Codes.
-              <i>Designs, Codes and Cryptography</i>. <bold>91</bold>, 2649–2663 (2023). <br> 
-              DOI: <a href="https://doi.org/10.1007/s10623-023-01216-6"> https://doi.org/10.1007/s10623-023-01216-6</a>. 
-              arXiv: <a href="https://arxiv.org/abs/2201.03741"> https://arxiv.org/abs/2201.03741</a>.</li>
-          </ul>
-        </div>
-        <hr></hr>
-
-        <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Contributions to the profession</h3>
-          <ul class="list-disc pl-5 text-black-600">
-            <li>P.E. Harris, Z. Markman, L. Martinez, A. Mock, E.J. Pabón-Cancel, A. Verga, and S. Wang. A Model for a One-Hour Workshop on Mentoring. 
-              <a href="http://digitaleditions.walsworthprintgroup.com/publication/?m=7656&i=782706&p=18&ver=html5"> <i>MAA Focus</i>, 43(1):18-21, 2023.<a/> </li>
-          </ul>
-        </div>
-        <hr></hr>
-
-        <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Origami</h3>
-          <img
-            class="w-96 mb-3 mx-auto object-contain"
-            src="Rose.jpg"
-            alt="Rose"/> <br>
-
-          <img
-            class="w-96 mb-3 mx-auto object-contain"
-            src="Mammoth.jpg"
-            alt="Mammoth"/> <br>
-          
-          <ul class="list-disc pl-5 text-black-600">
-            <li>Some pictures of origami models I have folded in the past. Origami Rose (designed by Jo Nakashima), Origami Mammoth (designed by Satoshi Kamiya) 
-            <a><a/> </li>
-          </ul>
-        </div>
-        <hr></hr>
-                
+        <p class="text-gray-700 dark:text-gray-300 mt-4">
+          Some origami models I’ve folded: Origami Rose (Jo Nakashima) and Origami Mammoth (Satoshi Kamiya).
+        </p>
+      </section>
     </div>
-    <div class="flex justify-center mb-4 text-black-400 text-sm">The webpage template is taken from
-      <a class="text-blue-600 ml-1" href="https://github.com/onpix/minimal-academic-website"> onpix</a>
-    </div>
-    
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 dark:text-gray-400 text-sm py-6">
+      Template adapted from
+      <a class="text-green-600 dark:text-green-400 hover:underline" href="https://github.com/onpix/minimal-academic-website">onpix</a>.
+    </footer>
   </body>
 </html>
