@@ -8,21 +8,25 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      a {
+        word-break: break-word;
+      }
+    </style>
   </head>
-  <body>
-    <div class="container mx-auto px-12 py-8">
-      <div class="bg-white flex flex-col space-y-12 rounded-lg p-8 md:px-24 px-8">
+  <body class="bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 py-8">
+      <div class="bg-white flex flex-col space-y-12 rounded-lg p-4 sm:p-6 md:px-16 lg:px-24 shadow">
         
         <!-- Profile -->
         <div class="text-center -mb-6">
           <img
-            class="w-96 mb-3 mx-auto object-contain"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-3 mx-auto object-contain rounded-lg"
             src="ProfilePic.jpg"
             alt="Eric J. Pabón Cancel"
           />
-          <br />
-          <h1 class="text-3xl font-semibold mt-2">Eric J. Pabón Cancel</h1>
-          <h2 class="text-xl font-medium text-black-600">
+          <h1 class="text-2xl sm:text-3xl font-semibold mt-2">Eric J. Pabón Cancel</h1>
+          <h2 class="text-lg sm:text-xl font-medium text-gray-600">
             Graduate Student, Department of Mathematics <br />
             Mathematical Sciences Building, Office 609 <br />
             Purdue University, West Lafayette
@@ -31,55 +35,50 @@
 
         <!-- About Me -->
         <div class="text-center mb-3">
-          <h3 class="text-2xl font-semibold mb-2">About Me</h3>
-          <p class="text-black-600" align="justify">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">About Me</h3>
+          <p class="text-gray-700 text-justify sm:text-left">
             I am a graduate Mathematics student at
-            <a href="https://www.purdue.edu">Purdue University</a>. During the
+            <a href="https://www.purdue.edu" class="text-green-600 hover:underline">Purdue University</a>. During the
             summer of 2025, I was a research intern in the Computing &
             Information Science Research Foundation at Sandia National
             Laboratories (Livermore, California), as part of the
-            <a
-              class="text-green-600 hover:underline"
-              href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/"
-              >Universities Research Association-Sandia Graduate Student Summer
-              Fellowship</a
-            >, where I worked on data-driven machine learning surrogate models 
+            <a class="text-green-600 hover:underline"
+              href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/">
+              Universities Research Association-Sandia Graduate Student Summer Fellowship
+            </a>, where I worked on data-driven machine learning surrogate models 
             (data-driven closure models) and data assimilation. 
+            <br /><br />
             I am a former research intern at the 2023 MIT Lincoln Laboratory
             Summer Research Program, where I worked on unsupervised machine learning under
             Group 39 of Division 3, as part of the
-            <a
-              class="text-green-600 hover:underline"
-              href="https://www.gemfellowship.org"
-              >National GEM Consortium</a
-            >
-            Fellowship Employer Sponsor Internship. In the summer of 2022, I was a
-            participant at the
-            <a
-              class="text-green-600 hover:underline"
-              href="https://icerm.brown.edu/program/summer@icerm/si-22"
-              >Summer@ICERM2022: Computational Combinatorics</a
-            >
-            REU Program at Brown University, where I researched parking
+            <a class="text-green-600 hover:underline" href="https://www.gemfellowship.org">
+              National GEM Consortium
+            </a> Fellowship Employer Sponsor Internship. 
+            <br /><br />
+            In the summer of 2022, I was a participant at the
+            <a class="text-green-600 hover:underline"
+              href="https://icerm.brown.edu/program/summer@icerm/si-22">
+              Summer@ICERM2022: Computational Combinatorics
+            </a> REU Program at Brown University, where I researched parking
             functions and algebraic combinatorics under 
-            <a 
-              class="text-green-600 hover:underline" 
-              href="https://www.pamelaeharris.com/"
-              >Prof. Pamnela Harris</a
-            > from the University of Wisconsin-Milwaukee. In the summer of 2021, I
-            participated in the East Tennessee State Universtiy & University of
+            <a class="text-green-600 hover:underline" href="https://www.pamelaeharris.com/">
+              Prof. Pamela Harris
+            </a> from the University of Wisconsin-Milwaukee. 
+            <br /><br />
+            In the summer of 2021, I participated in the East Tennessee State University & University of
             Puerto Rico at Ponce REU Program in Algebraic Coding Theory,
             Probability and Combinatorics, where I researched
             algebraic-geometric error-correcting codes and linear
             error-correcting codes under Prof. Fernando Piñero from the 
             University of Puerto Rico at Ponce. 
+            <br /><br />
             I earned my Bachelor of Science degree in Mathematics at the 
-            <a
-              class="text-green-600 hover:underline"
-              href="https://www.uprm.edu/portada/"
-              > University of Puerto Rico, Mayagüez Campus (UPRM)</a
-            >, where I also worked as a research assistant in abstract algebra 
+            <a class="text-green-600 hover:underline"
+              href="https://www.uprm.edu/portada/">
+              University of Puerto Rico, Mayagüez Campus (UPRM)
+            </a>, where I also worked as a research assistant in abstract algebra 
             and number theory under Prof. Reyes M. Ortiz Albino. 
+            <br /><br />
             Some of my hobbies include origami, watching pop-culture related
             movies and shows, enjoying nature, and playing percussion
             instruments. If you have any questions, feel free to contact me
@@ -90,35 +89,28 @@
 
         <!-- Contact -->
         <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Contact and CV</h3>
-          <p class="text-black-600">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Contact and CV</h3>
+          <p class="text-gray-700">
             Email:
-            <a
-              class="text-green-600 hover:underline"
-              href="mailto: epabonca@purdue.edu"
-              >epabonca@purdue.edu</a
-            >
+            <a class="text-green-600 hover:underline"
+              href="mailto: epabonca@purdue.edu">epabonca@purdue.edu</a>
             <br />
             LinkedIn Profile:
-            <a
-              class="text-green-600 hover:underline"
-              href="https://www.linkedin.com/in/ericjpaboncancel/"
-              >linkedin.com/in/ericjpaboncancel/</a
-            >
+            <a class="text-green-600 hover:underline"
+              href="https://www.linkedin.com/in/ericjpaboncancel/">
+              linkedin.com/in/ericjpaboncancel/
+            </a>
             <br />
-            <a
-              class="text-green-600 hover:underline"
-              href="CV_EricJPabonCancel.pdf"
-              >Curriculum Vitae</a
-            >
+            <a class="text-green-600 hover:underline"
+              href="CV_EricJPabonCancel.pdf">Curriculum Vitae</a>
           </p>
         </div>
         <hr />
 
         <!-- Research Interests -->
         <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Research Interests</h3>
-          <p class="text-black-600" align="justify">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Research Interests</h3>
+          <p class="text-gray-700 text-justify sm:text-left">
             My research interests currently lie in dynamical systems, machine
             learning, and computational & applied math. During my bachelor's
             degree however, I did venture into more theoretical research areas,
@@ -128,55 +120,39 @@
         <hr />
 
         <!-- Papers -->
-        <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Papers and Preprints</h3>
-          <ul class="list-disc pl-5 text-black-600">
+        <div class="mb-3 break-words">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Papers and Preprints</h3>
+          <ul class="list-disc pl-5 text-gray-700 space-y-2">
             <li>
               S. Polk, E.J. Pabon-Cancel, R. Paleja, K. Chestnut-Chang, R.
               Jensen and M. Ramirez. Unsupervised Behavior Inference From Human
               Action Sequences.
-              <i
-                >2024 IEEE Conference on Games (CoG), Milan, Italy, 2024, pp.
-                1-8</i
-              >. DOI:
-              <a
-                href="https://doi.org/10.1109/CoG60054.2024.10645587"
-              >
-                https://doi.org/10.1109/CoG60054.2024.10645587
-              </a>.
+              <i>2024 IEEE Conference on Games (CoG), Milan, Italy, 2024, pp. 1-8</i>.
+              DOI:
+              <a href="https://doi.org/10.1109/CoG60054.2024.10645587">https://doi.org/10.1109/CoG60054.2024.10645587</a>.
             </li>
             <li>
               A. Allen, E.J. Pabon-Cancel, L. Polanco and F. Piñero-Gonzalez.
               Improving the Dimension Bound of Hermitian-Lifted Codes. arXiv:
-              <a href="https://arxiv.org/abs/2302.01557">
-                https://arxiv.org/abs/2302.01557
-              </a>.
+              <a href="https://arxiv.org/abs/2302.01557">https://arxiv.org/abs/2302.01557</a>.
             </li>
             <li>
               D. Chen, P.E. Harris, J. Carlos Martinez Mori, E.J. Pabon-Cancel,
               and G. Sargent. Permutation Invariant Parking Assortments.
               <i>Enumerative Combinatorics and Applications</i>.
-              <b>4:1</b>, 1-25 (2024). #S2R4. <br />
-              DOI:
-              <a href="https://doi.org/10.54550/ECA2024V4S1R4">
-                https://doi.org/10.54550/ECA2024V4S1R4
-              </a>. arXiv:
-              <a href="https://arxiv.org/abs/2211.01063">
-                https://arxiv.org/abs/2211.01063
-              </a>.
+              <b>4:1</b>, 1-25 (2024). #S2R4. DOI:
+              <a href="https://doi.org/10.54550/ECA2024V4S1R4">https://doi.org/10.54550/ECA2024V4S1R4</a>. 
+              arXiv:
+              <a href="https://arxiv.org/abs/2211.01063">https://arxiv.org/abs/2211.01063</a>.
             </li>
             <li>
               I. Byrne, N. Dodson, R. Lynch, E.J. Pabon-Cancel and F.
               Piñero-Gonzalez. Improving the Minimum Distance Bound of Trace
               Goppa Codes. <i>Designs, Codes and Cryptography</i>.
-              <b>91</b>, 2649–2663 (2023). <br />
-              DOI:
-              <a href="https://doi.org/10.1007/s10623-023-01216-6">
-                https://doi.org/10.1007/s10623-023-01216-6
-              </a>. arXiv:
-              <a href="https://arxiv.org/abs/2201.03741">
-                https://arxiv.org/abs/2201.03741
-              </a>.
+              <b>91</b>, 2649–2663 (2023). DOI:
+              <a href="https://doi.org/10.1007/s10623-023-01216-6">https://doi.org/10.1007/s10623-023-01216-6</a>. 
+              arXiv:
+              <a href="https://arxiv.org/abs/2201.03741">https://arxiv.org/abs/2201.03741</a>.
             </li>
           </ul>
         </div>
@@ -184,17 +160,13 @@
 
         <!-- Contributions -->
         <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">
-            Contributions to the profession
-          </h3>
-          <ul class="list-disc pl-5 text-black-600">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Contributions to the Profession</h3>
+          <ul class="list-disc pl-5 text-gray-700">
             <li>
               P.E. Harris, Z. Markman, L. Martinez, A. Mock, E.J. Pabón-Cancel,
               A. Verga, and S. Wang. A Model for a One-Hour Workshop on
               Mentoring.
-              <a
-                href="http://digitaleditions.walsworthprintgroup.com/publication/?m=7656&i=782706&p=18&ver=html5"
-              >
+              <a href="http://digitaleditions.walsworthprintgroup.com/publication/?m=7656&i=782706&p=18&ver=html5">
                 <i>MAA Focus</i>, 43(1):18-21, 2023.
               </a>
             </li>
@@ -204,20 +176,18 @@
 
         <!-- Origami -->
         <div class="mb-3">
-          <h3 class="text-2xl font-semibold mb-2">Origami</h3>
+          <h3 class="text-xl sm:text-2xl font-semibold mb-2">Origami</h3>
           <img
-            class="w-96 mb-3 mx-auto object-contain"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-3 mx-auto object-contain rounded-lg"
             src="Rose.jpg"
             alt="Rose"
           />
-          <br />
           <img
-            class="w-96 mb-3 mx-auto object-contain"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-3 mx-auto object-contain rounded-lg"
             src="Mammoth.jpg"
             alt="Mammoth"
           />
-          <br />
-          <ul class="list-disc pl-5 text-black-600">
+          <ul class="list-disc pl-5 text-gray-700">
             <li>
               Some pictures of origami models I have folded in the past. Origami
               Rose (designed by Jo Nakashima), Origami Mammoth (designed by
@@ -229,13 +199,10 @@
       </div>
 
       <!-- Footer -->
-      <div class="flex justify-center mb-4 text-black-400 text-sm">
+      <div class="flex justify-center mb-4 text-gray-500 text-sm">
         The webpage template is taken from
-        <a
-          class="text-blue-600 ml-1"
-          href="https://github.com/onpix/minimal-academic-website"
-          >onpix</a
-        >
+        <a class="text-blue-600 ml-1"
+          href="https://github.com/onpix/minimal-academic-website">onpix</a>
       </div>
     </div>
   </body>
