@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<p>
+<p p style="text-align: justify;">
 I am proud to say that I am product of the Puerto Rican Public School System. I have always been passionate for STEM, all the way from elementary school, 
 to participating in the Puerto Rico Public School Math Olympiad and The National Society of Professional Surveyors Trig-Star National Competition. I started
 my formal mathematical journey when I took the abstract algebra course at UPRM, and received mentorship from Prof. Reyes M. Ortiz Albino. This led me to participate 
@@ -146,7 +146,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     <!-- URA-Sandia Fellowship Section -->
     <div class="fellowship-section">
       <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
-      <p>
+      <p p style="text-align: justify;">
         Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
         Learn more about the 2025 Fellows <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" style="color: rgb(51, 113, 55);">here</a>.
       </p>
@@ -158,7 +158,8 @@ school to earn a graduate degree in mathematics. Attached are some links related
             Eric J. Pabón Cancel, Purdue University
           </div>
           <div class="toggle-content">
-            <p>Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.</p>
+            <p p style="text-align: justify;">Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.
+            </p>
           </div>
         </div>
       </div>
@@ -173,7 +174,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     <!-- Facebook Section -->
     <div class="fellowship-section">
       <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen historia | Educación</h4>
-      <p>
+      <p p style="text-align: justify;">
         Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
       </p>
       <div id="fb-root"></div>
@@ -209,7 +210,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
 <br>
 
 <h4 style="margin-top: 0;">Summer@ICERM 2022: Computational Combinatorics</h4>
-<p>
+<p p style="text-align: justify;">
 Final presentation of the research conducted as part of the Summer@ICERM 2022 REU Program "On Permutation-Invariant Parking Sequences".
 </p>
 
@@ -227,7 +228,7 @@ Final presentation of the research conducted as part of the Summer@ICERM 2022 RE
 <br>
 
 <h4 style="margin-top: 0;">2018 UPRM Pre-Engineering Summer Camp</h4>
-<p>
+<p p style="text-align: justify;">
 Interview posted by the UPRM News Organization, <i>Prensa RUM</i>, regarding my experience in the 2018 UPRM STEM and Pre-Engineering Camp the summer before entering the university.
 </p>
 
