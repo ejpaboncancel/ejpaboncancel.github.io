@@ -4,7 +4,7 @@ title: Awards
 permalink: /awards/
 ---
 
-# Fellowships, Scholarships and Prizes <br>
+## Fellowships, Scholarships and Prizes <br>
 2025 URA–Sandia Graduate Student Summer Fellowship May 2025 – August 2025 <br>
 2023 National GEM Consortium PhD Science Fellowship  (August 2023 – May 2024) <br>
 - Purdue University Department of Mathematics Sponsorship (August 2023 – May 2024)  
@@ -18,7 +18,7 @@ PR–LSAMP Research Scholarship  (August 2019 – December 2022)<br>
 <hr>
 <br>
 
-# Merits and Honors <br>
+## Merits and Honors <br>
 2023 Ford Foundation Predoctoral Fellowship Honorable Mention (March 2023) <br>
 2022 Hispanic Scholarship Fund Scholar  (June 2022) <br>
 National Math Alliance Predoctoral Scholar (November 2021) <br>
