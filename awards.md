@@ -6,7 +6,7 @@
 
 2023 MIT Lincoln Laboratory I³C 3rd Place Research Proposal Prize  (July 2023) <br>
 2022 Evertec Inc. STEM Scholarship (October 2022) <br>
-Puerto Rico–Louis Stokes Alliance for Minority Participation Research Scholarship  (August 2019 – December 2022)<br>
+PR–LSAMP Research Scholarship  (August 2019 – December 2022)<br>
 
 ---
 
