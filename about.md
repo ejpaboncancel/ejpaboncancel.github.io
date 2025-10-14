@@ -130,13 +130,14 @@ school to earn a graduate degree in mathematics. Attached are some links related
       text-align: center;
     }
 
-    /* Center all paragraph text */
+    /* Paragraph text justified but centered in layout */
     .fellowship-section p {
-      text-align: center;
+      text-align: justify;
       margin: 0 auto;
+      width: 95%;
     }
 
-    /* Facebook post container centered tightly */
+    /* Facebook post centered tightly */
     .fb-post-container {
       text-align: center;
       margin: 0 auto;
@@ -144,7 +145,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
       padding: 0;
     }
 
-    /* Center image logos and shrink slightly */
+    /* Center logos and images */
     .fellowship-logo img,
     .fellowship-card img {
       display: block;
@@ -152,10 +153,9 @@ school to earn a graduate degree in mathematics. Attached are some links related
       width: 85%;
     }
 
-    /* Center toggles */
-    .toggle-header,
-    .toggle-content {
-      text-align: center !important;
+    /* Keep toggle sections centered */
+    .toggle-header {
+      text-align: center;
     }
   }
 </style>
