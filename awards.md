@@ -5,7 +5,7 @@ permalink: /awards/
 ---
 
 ## Fellowships, Scholarships and Prizes <br>
-2025 URA–Sandia Graduate Student Summer Fellowship May 2025 – August 2025 <br>
+2025 URA–Sandia Graduate Student Summer Fellowship (May 2025 – August 2025) <br>
 2023 National GEM Consortium PhD Science Fellowship  (August 2023 – May 2024) <br>
 - Purdue University Department of Mathematics Sponsorship (August 2023 – May 2024)  
 - MIT Lincoln Laboratory Employer Sponsorship (Internship) (May 2023 – August 2023)
