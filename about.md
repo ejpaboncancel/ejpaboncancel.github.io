@@ -97,7 +97,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
 
   .fellowship-logo img {
     max-width: 100%;
-    width: 80%; /* responsive width */
+    width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -116,38 +116,46 @@ school to earn a graduate degree in mathematics. Attached are some links related
 
   /* ==================== Responsive Adjustments ==================== */
   @media (max-width: 768px) {
-    /* Single column grid */
     .fellowship-grid {
       grid-template-columns: 1fr !important;
-      gap: 20px;
+      gap: 25px;
       justify-items: center;
       text-align: center;
     }
 
-    /* Center sections */
     .fellowship-section {
-      max-width: 90%;
+      max-width: 95%;
       margin: 0 auto;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0;
+      text-align: center;
     }
 
-    /* Keep text readable but balanced */
+    /* Center all paragraph text */
     .fellowship-section p {
-      text-align: justify;
+      text-align: center;
       margin: 0 auto;
     }
 
-    /* Facebook post container */
+    /* Facebook post container centered tightly */
     .fb-post-container {
       text-align: center;
-      padding-left: 0;
-      padding-right: 0;
+      margin: 0 auto;
+      width: 95%;
+      padding: 0;
     }
 
-    /* Scale down logos/images for mobile */
-    .fellowship-logo img {
-      width: 90%;
+    /* Center image logos and shrink slightly */
+    .fellowship-logo img,
+    .fellowship-card img {
+      display: block;
+      margin: 0 auto;
+      width: 85%;
+    }
+
+    /* Center toggles */
+    .toggle-header,
+    .toggle-content {
+      text-align: center !important;
     }
   }
 </style>
@@ -202,14 +210,8 @@ school to earn a graduate degree in mathematics. Attached are some links related
   function toggleFellowContent(header) {
     const content = header.nextElementSibling;
     const isActive = content.classList.contains('active');
-
-    if (isActive) {
-      content.classList.remove('active');
-      header.classList.remove('active');
-    } else {
-      content.classList.add('active');
-      header.classList.add('active');
-    }
+    content.classList.toggle('active', !isActive);
+    header.classList.toggle('active', !isActive);
   }
 </script>
 
