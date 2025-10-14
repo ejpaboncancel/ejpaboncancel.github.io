@@ -14,7 +14,9 @@ permalink: /awards/
 2022 Evertec Inc. STEM Scholarship (October 2022) <br>
 PR–LSAMP Research Scholarship  (August 2019 – December 2022)<br>
 
----
+<br>
+<hr>
+<br>
 
 # Merits and Honors <br>
 2023 Ford Foundation Predoctoral Fellowship Honorable Mention (March 2023) <br>
