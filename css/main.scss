@@ -1,162 +1,61 @@
 ---
-# Main Sass file for fully centralized, responsive layout (fixed mobile offset)
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-// ===========================
-// VARIABLES
-// ===========================
+
+
+
+// Our variables
 $base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+//$base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   .95em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
 $spacing-unit:     30px;
+
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #0077CC;
-$uprm-white:       #FFFFFF;
-$uprm-green:       #337137;
+// $gameday-sky: #109dc0;
+$umass-grey:      #63666a;
+$umass-red:      #881c1c;
+
+
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+
+// Width of the content area
 $content-width:    950px;
-// ===========================
-// GLOBAL RESET & BOX SIZING
-// ===========================
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+$on-palm:          600px;
+$on-laptop:        950px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
-body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $text-color;
-  background-color: $background-color;
-  margin: 0;
-  padding: 0;
-  text-align: center; // centers inline text
-}
-// ===========================
-// WRAPPER / MAIN CONTENT
-// ===========================
-.wrapper {
-  width: 100%;
-  max-width: $content-width;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;   // responsive padding
-  padding-right: 5%;  // responsive padding
-  box-sizing: border-box;
-  text-align: center;
-  
-  // Remove padding on mobile for elements that handle their own padding
-  @media (max-width: 768px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-// ===========================
-// HEADER
-// ===========================
-header {
-  width: 100%;
-  background-color: $brand-color;
-  padding: $spacing-unit / 2 0;
-  text-align: center;
-  .logo {
-    display: inline-block;
-    max-width: 200px;
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .site-title {
-    color: $uprm-white;
-    font-size: 1.5em;
-    margin: 0.25em 0;
-  }
-}
-// ===========================
-// NAVIGATION
-// ===========================
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-  box-sizing: border-box;
-  a {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: $brand-color;
-    color: $uprm-white;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    width: auto;
-    max-width: 90%;
-    margin: 5px 0;
-  }
-}
-// ===========================
-// SECTIONS / FLEXBOX
-// ===========================
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding: $spacing-unit / 2 5%; // responsive side padding
-  box-sizing: border-box;
-}
-// ===========================
-// IMAGES & MEDIA
-// ===========================
-img, video, table {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-// ===========================
-// FOOTER
-// ===========================
-footer {
-  width: 100%;
-  padding: $spacing-unit / 2 5%; // responsive padding
-  text-align: center;
-  background-color: $grey-color-light;
-  color: $grey-color-dark;
-  box-sizing: border-box;
-}
-// ===========================
-// TYPOGRAPHY
-// ===========================
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  margin: 0.5em 0;
-}
-p, li {
-  text-align: center;
-}
-// ===========================
-// LINKS
-// ===========================
-a {
-  color: $brand-color;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-// ===========================
-// PARTIALS (OPTIONAL)
-// ===========================
-@import "syntax-highlighting", "fancy-image";
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "header",
+	"mobile-header",
+        "base",
+        "layout",
+        "syntax-highlighting",
+	"fancy-image"
+;
