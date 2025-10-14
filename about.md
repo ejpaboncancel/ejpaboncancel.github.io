@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p p style="text-align: justify;">
-I am proud to say that I am product of the Puerto Rican Public School System. I have always been passionate for STEM, all the way from elementary school, 
+I am proud to be product of the Puerto Rican Public School System. I have always been passionate for STEM, all the way from elementary school, 
 to participating in the Puerto Rico Public School Math Olympiad and The National Society of Professional Surveyors Trig-Star National Competition. I started
 my formal mathematical journey when I took the abstract algebra course at UPRM, and received mentorship from Prof. Reyes M. Ortiz Albino. This led me to participate 
 in Summer REUs, as well as undergraduate research programs at UPRM. My motivation to continue doing research in mathematics led me to apply to graduate
