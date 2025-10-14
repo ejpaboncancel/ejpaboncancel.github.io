@@ -114,16 +114,40 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  /* Responsive adjustments */
+  /* ==================== Responsive Adjustments ==================== */
   @media (max-width: 768px) {
+    /* Single column grid */
     .fellowship-grid {
       grid-template-columns: 1fr !important;
       gap: 20px;
+      justify-items: center;
+      text-align: center;
     }
 
+    /* Center sections */
     .fellowship-section {
-      padding-left: 5%;
-      padding-right: 5%;
+      max-width: 90%;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* Keep text readable but balanced */
+    .fellowship-section p {
+      text-align: justify;
+      margin: 0 auto;
+    }
+
+    /* Facebook post container */
+    .fb-post-container {
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* Scale down logos/images for mobile */
+    .fellowship-logo img {
+      width: 90%;
     }
   }
 </style>
@@ -227,4 +251,3 @@ Interview posted by the UPRM News Organization, <i>Prensa RUM</i>, regarding my 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
   </iframe>
 </div>
-
