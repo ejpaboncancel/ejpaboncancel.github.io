@@ -1,3 +1,3 @@
-# UMASS Template
+# Eric's Webside
 
-This is my template for hosting a UMASS styled academic website. Instructions on how to use it can be found [here](http://mrlucasch.github.io/resources/academic-website/).
+Eric J. Pabón Cancel's portfolio. Template taken from user: https://github.com/thelimeburner.
