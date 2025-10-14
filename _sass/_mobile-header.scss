@@ -1,66 +1,73 @@
 @media only screen and (max-width: 600px) {
 
-.site-nav h1 {
-		border-bottom: 3px solid transparent;
+	/* === Mobile Navigation Icon === */
+	.site-nav h1 {
+		display: block; /* Make visible on mobile */
+		background-color: #ffffff; /* White background */
+		color: #337137; /* Green icon/text color */
+		border: none; 
+		border-radius: 6px;
 		cursor: pointer;
-		display: none; /* Standard. IE8+, Saf, FF3+ */
-		height: 23px;
-		left: auto;
-		margin-top: 10px;
-		position: static;
-		white-space: nowrap;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+		margin: 10px auto;
+		font-size: 20px;
+		font-weight: bold;
+		box-shadow: 0px 2px 4px rgba(0,0,0,0.3); /* subtle shadow for depth */
 	}
 
-.site-nav .menu {
-		border: 3px solid transparent;
+	/* === Mobile Menu Container === */
+	.site-nav .menu {
+		border: 3px solid #ffffff; /* solid white border */
 		border-top: 0;
-		/* bg and border colors set in header */
+		background-color: #ffffff; /* white dropdown background */
 		-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.8);
 		-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.8);
 		box-shadow: 0px 2px 2px rgba(0,0,0,0.8);
-		/* Hide until activated */
 		display: block;
 		left: -3px;
 		min-width: 215px;
-/*		margin-top: 36px; */
 		padding: 4px 0;
 		position: relative;
 		right: -3px;
 		z-index: 999;
 	}
 
-
-.site-nav .menu.open {
+	/* Menu visible when toggled open */
+	.site-nav .menu.open {
 		display: block;
 	}
 
-.site-nav .menu li {
+	/* === Menu Items === */
+	.site-nav .menu li {
 		display: block;
 		margin: 0;
-		color: #522d80;
+		color: #337137; /* green menu text */
 	}
 
-.site-nav ul.menu a {
-	background: #fff;
-	color: #522d80;
+	.site-nav ul.menu a {
+		background: #ffffff; /* white menu background */
+		color: #337137; /* green links */
+	}
 
-}
-
-.site-nav a,
+	.site-nav a,
 	.site-nav li.current-menu-item > a {
-		padding: 4px 10px;
+		padding: 6px 12px;
 	}
 
-.site-nav .menu > li {
+	.site-nav .menu > li {
 		height: auto;
 		text-align: left;
 	}
 
-.site-nav .sub-menu {
-		border: 0;
-		-moz-box-shadow: none; /* FF3.5+ */
-		-webkit-box-shadow: none; /* Saf3+, Chrome */
-		box-shadow: none; /* Standard. Opera 10.5, IE9 */
+	/* === Sub-Menus === */
+	.site-nav .sub-menu {
+		border: 3px solid #ffffff; /* white border for submenus */
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
 		display: block;
 		font-family: 'Titillium Web', Helvetica, Arial, Verdana, sans-serif;
 		position: relative;
@@ -70,14 +77,13 @@
 		text-transform: uppercase;
 		right: auto;
 		width: auto;
+		padding-left: 16px;
+		background-color: #ffffff; /* ensures submenu is white */
+		color: #337137; /* submenu text color */
 	}
 
-	.site-nav .sub-menu {
-		padding-left: 16px;
-	}
 	.site-nav .sub-menu li.current-menu-item > a {
 		border: 0;
+		color: #337137;
 	}
-
 }
-
