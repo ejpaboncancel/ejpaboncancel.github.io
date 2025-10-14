@@ -18,12 +18,27 @@ school to earn a graduate degree in mathematics. Attached are some links related
 
 <style>
   /* ==================== Fellowship Grid ==================== */
+  
+  /* Container to break out of wrapper */
+  .fellowship-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0;
+  }
+  
   .fellowship-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: start;
-    margin: 30px 0;
+    margin: 30px auto;
+    max-width: 950px;
+    padding: 0 5%;
+    box-sizing: border-box;
   }
 
   .fellowship-section {
@@ -109,98 +124,66 @@ school to earn a graduate degree in mathematics. Attached are some links related
     width: 100%;
     margin: 20px auto;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
     box-sizing: border-box;
   }
 
-  /* ==================== Responsive Adjustments ==================== */
+  .fb-post-container .fb-post {
+    margin: 0 auto !important;
+  }
+
+  /* Responsive adjustments */
   @media (max-width: 768px) {
     .fellowship-grid {
-      grid-template-columns: 1fr !important;
-      gap: 25px;
-      justify-items: center;
-      text-align: center;
-    }
-
-    .fellowship-section {
-      max-width: 95%;
-      margin: 0 auto;
-      padding: 0;
-      text-align: center;
-    }
-
-    /* Paragraph text justified but centered in layout */
-    .fellowship-section p {
-      text-align: justify;
-      margin: 0 auto;
-      width: 95%;
-    }
-
-    /* Facebook post centered tightly */
-    .fb-post-container {
-      text-align: center;
-      margin: 0 auto;
-      width: 95%;
-      padding: 0;
-    }
-
-    /* Center logos and images */
-    .fellowship-logo img,
-    .fellowship-card img {
-      display: block;
-      margin: 0 auto;
-      width: 85%;
-    }
-
-    /* Keep toggle sections centered */
-    .toggle-header {
-      text-align: center;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0 20px;
     }
   }
 </style>
 
-<div class="fellowship-grid">
-  <!-- URA-Sandia Fellowship Section -->
-  <div class="fellowship-section">
-    <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
-    <p>
-      Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
-      Learn more about the 2025 Fellows <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" style="color: rgb(51, 113, 55);">here</a>.
-    </p>
+<div class="fellowship-container">
+  <div class="fellowship-grid">
+    <!-- URA-Sandia Fellowship Section -->
+    <div class="fellowship-section">
+      <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
+      <p>
+        Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
+        Learn more about the 2025 Fellows <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" style="color: rgb(51, 113, 55);">here</a>.
+      </p>
 
-    <div class="fellowship-card">
-      <img src="https://ura-hq.org/wp-content/uploads/2025/03/Eric-P.jpg" alt="Eric J. Pabón Cancel">
-      <div class="fellow-toggle">
-        <div class="toggle-header" onclick="toggleFellowContent(this)">
-          Eric J. Pabón Cancel, Purdue University
+      <div class="fellowship-card">
+        <img src="https://ura-hq.org/wp-content/uploads/2025/03/Eric-P.jpg" alt="Eric J. Pabón Cancel">
+        <div class="fellow-toggle">
+          <div class="toggle-header" onclick="toggleFellowContent(this)">
+            Eric J. Pabón Cancel, Purdue University
+          </div>
+          <div class="toggle-content">
+            <p>Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.</p>
+          </div>
         </div>
-        <div class="toggle-content">
-          <p>Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.</p>
-        </div>
+      </div>
+
+      <div class="fellowship-logo">
+        <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/" target="_blank">
+          <img src="https://ura-hq.org/wp-content/uploads/2025/03/URA-SANDIA-.png" alt="URA Sandia Partnership">
+        </a>
       </div>
     </div>
 
-    <div class="fellowship-logo">
-      <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/" target="_blank">
-        <img src="https://ura-hq.org/wp-content/uploads/2025/03/URA-SANDIA-.png" alt="URA Sandia Partnership">
-      </a>
-    </div>
-  </div>
-
-  <!-- Facebook Section -->
-  <div class="fellowship-section">
-    <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen historia | Educación</h4>
-    <p>
-      Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
-    </p>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="XYZ"></script>
-    <div class="fb-post-container">
-      <div class="fb-post" 
-           data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682" 
-           data-show-text="true" 
-           data-width="100%">
+    <!-- Facebook Section -->
+    <div class="fellowship-section">
+      <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen historia | Educación</h4>
+      <p>
+        Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
+      </p>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="XYZ"></script>
+      <div class="fb-post-container">
+        <div class="fb-post" 
+             data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682" 
+             data-show-text="true" 
+             data-width="100%">
+        </div>
       </div>
     </div>
   </div>
@@ -210,8 +193,14 @@ school to earn a graduate degree in mathematics. Attached are some links related
   function toggleFellowContent(header) {
     const content = header.nextElementSibling;
     const isActive = content.classList.contains('active');
-    content.classList.toggle('active', !isActive);
-    header.classList.toggle('active', !isActive);
+
+    if (isActive) {
+      content.classList.remove('active');
+      header.classList.remove('active');
+    } else {
+      content.classList.add('active');
+      header.classList.add('active');
+    }
   }
 </script>
 
