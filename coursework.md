@@ -13,7 +13,7 @@ MA59500OT: Computational Optimal Transport and Deep Generative Models <br>
 MA59800: Topics in Dynamical Systems: Bifurcation Theory <br>
 MA54600: Introduction to Functional Analysis <br>
 MA59500AFF: Analytic Theory of Function Fields <br>
-MA59500MM:Introduction to Mathematical Modeling <br>
+MA59500MM: Introduction to Mathematical Modeling <br>
 MA54300: Introduction to Ordinary Differential Equations and Dynamical Systems <br>
 MA54400: Real Analysis and Measure Theory <br>
 MA55300: Introduction to Abstract Algebra <br>
