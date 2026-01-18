@@ -1,10 +1,20 @@
 ---
 layout: page
-title: Coursework
-permalink: /coursework/
+title: Academics
+permalink: /academics/
 ---
+## Teaching and Grading<br>
+MA59500MB:Mathematical Biology (Grading) - January 2026–May 2026<br>
+MA32500: History of Mathematics (Grading) - January 2026–May 2026<br>
+MA26100REC:Multivariate Calculus Recitation (Teaching):
+- August 2025–December 2025
+- January 2025–May 2025
+- August 2024–December 2024
+MA13900: Mathematics for Elementary Teachers III (Grading) - June 2024–August 2024<br>
 
-## Purdue University <br>
+<hr>
+
+## Coursework: Purdue University <br>
 MA61500: Numerical Methods for Partial Differential Equations <br>
 MA55400: Linear Algebra <br>
 MA51900: Introduction to Probability <br>
@@ -19,9 +29,7 @@ MA54400: Real Analysis and Measure Theory <br>
 MA55300: Introduction to Abstract Algebra <br>
 MA53000: Functions of a Complex Variable I <br>
 
-<br>
 <hr>
-<br>
 
 ## University of Puerto Rico, Mayagüez Campus <br>
 MATE6101: Number Theory I <br>
