@@ -12,9 +12,11 @@ MA26100REC: Multivariate Calculus Recitation (Teaching):
 - August 2024–December 2024<br>
 
 MA13900: Mathematics for Elementary Teachers III (Grading) - June 2024–August 2024<br>
+
 <br>
 <hr>
 <br>
+
 ## Coursework: Purdue University <br>
 MA61500: Numerical Methods for Partial Differential Equations <br>
 MA55400: Linear Algebra <br>
@@ -29,9 +31,11 @@ MA54300: Introduction to Ordinary Differential Equations and Dynamical Systems <
 MA54400: Real Analysis and Measure Theory <br>
 MA55300: Introduction to Abstract Algebra <br>
 MA53000: Functions of a Complex Variable I <br>
+
 <br>
 <hr>
 <br>
+
 ## University of Puerto Rico, Mayagüez Campus <br>
 MATE6101: Number Theory I <br>
 MATE5150: Linear Algebra <br>
