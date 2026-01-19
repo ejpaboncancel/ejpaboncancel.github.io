@@ -17,7 +17,7 @@ MA13900: Mathematics for Elementary Teachers III (Grading) - June 2024–August 
 <hr>
 <br>
 
-## Coursework: Purdue University <br>
+## Graduate Coursework: Purdue University <br>
 MA61500: Numerical Methods for Partial Differential Equations <br>
 MA55400: Linear Algebra <br>
 MA51900: Introduction to Probability <br>
@@ -36,6 +36,6 @@ MA53000: Functions of a Complex Variable I <br>
 <hr>
 <br>
 
-## University of Puerto Rico, Mayagüez Campus <br>
+## Graduate Coursework: University of Puerto Rico, Mayagüez Campus <br>
 MATE6101: Number Theory I <br>
 MATE5150: Linear Algebra <br>
