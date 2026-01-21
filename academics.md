@@ -19,12 +19,13 @@ MA13900: Mathematics for Elementary Teachers III (Grading) - June 2024–August 
 
 ## Graduate Coursework: Purdue University <br>
 MA61500: Numerical Methods for Partial Differential Equations <br>
-MA59800: Topics in Dynamical Systems: Hamiltonian Dynamics <br>
+MA53200: Elements of Stochastic Processes <br>
+MA59800: Hamiltonian Dynamics <br>
 MA55400: Linear Algebra <br>
 MA51900: Introduction to Probability <br>
 MA57300: Numerical Solutions of Ordinary Differential Equations <br>
 MA59500OT: Computational Optimal Transport and Deep Generative Models <br>
-MA59800: Topics in Dynamical Systems: Bifurcation Theory <br>
+MA59800: Topics in Dynamical Systems (Bifurcation Theory) <br>
 MA54600: Introduction to Functional Analysis <br>
 MA59500AFF: Analytic Theory of Function Fields <br>
 MA59500MM: Introduction to Mathematical Modeling <br>
