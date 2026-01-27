@@ -10,6 +10,7 @@
     position: relative;
 }
 
+/* Main site title — always white */
 .site-header .site-title a {
     font-size: 15px;
     letter-spacing: -1px;
@@ -18,7 +19,6 @@
     font-weight: 500;
     font-family: 'Titillium Web', sans-serif;
 
-    // Force white color
     color: #ffffff !important;
     text-decoration: none !important;
 
@@ -72,7 +72,6 @@
 }
 
 /* Sub Menu */
-
 .site-nav .sub-menu a {
     display: block;
     font-weight: normal;
@@ -103,7 +102,6 @@
 .sub-menu {
     border: 3px solid transparent;
     border-top: 0;
-    /* bg and border colors set in header */
     box-shadow: 0 2px 2px rgba(0,0,0,0.4);
     -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.4);
@@ -150,7 +148,6 @@
         background: $uprm-green;
         line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
