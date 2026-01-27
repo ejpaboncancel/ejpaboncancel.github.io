@@ -13,22 +13,24 @@
 
 .site-title a {
     font-size: 15px;
-/* 		margin-top: 15px;
-    line-height: 40px; */
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
     font-weight: 500;
-		font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+
     color: #ffffff;
-    &,
-    &:visited {
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
         color: #ffffff;
+        text-decoration: none;
     }
-    &,
-    &:hover {
-	text-decoration: none;
 }
+
 }
 
 .site-header .wrapper {
