@@ -6,12 +6,11 @@
     border-bottom: 4px solid $uprm-white;
     min-height: 56px;
     background: $uprm-green;
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    position: relative; // Positioning context for mobile nav
 }
 
-/* Main site title — always white */
-.site-header .site-title a {
+/* Main site title — guaranteed white using a very specific selector */
+html body header.site-header a.site-title {
     font-size: 15px;
     letter-spacing: -1px;
     margin-bottom: 0;
