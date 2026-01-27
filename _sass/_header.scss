@@ -18,15 +18,16 @@
     font-weight: 500;
     font-family: 'Titillium Web', sans-serif;
 
-    color: #ffffff;
-    text-decoration: none;
+    // Force white color
+    color: #ffffff !important;
+    text-decoration: none !important;
 
     &:visited,
     &:hover,
     &:active,
     &:focus {
-        color: #ffffff;
-        text-decoration: none;
+        color: #ffffff !important;
+        text-decoration: none !important;
     }
 }
 
@@ -175,7 +176,7 @@
 
             > svg {
                 width: 18px;
-                height: 15px;
+                height: 15;
 
                 path {
                     fill: $grey-color-dark;
