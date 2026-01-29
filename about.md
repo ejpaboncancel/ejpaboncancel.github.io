@@ -35,7 +35,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
   /* URA Iframe Container */
   .ura-iframe-container {
     width: 100%;
-    height: 500px;
+    height: 800px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     overflow: hidden;
@@ -83,7 +83,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     }
     
     .ura-iframe-container {
-      height: 600px;
+      height: 800px;
     }
   }
 </style>
