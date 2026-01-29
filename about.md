@@ -35,35 +35,17 @@ school to earn a graduate degree in mathematics. Attached are some links related
   /* URA Iframe Container */
   .ura-iframe-container {
     width: 100%;
-    height: 750px;
+    height: 780px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     overflow: hidden;
     background-color: #fff;
-    margin-bottom: 15px;
   }
 
   .ura-iframe-container iframe {
     width: 100%;
     height: 100%;
     border: none;
-  }
-
-  .ura-link-section {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .ura-link-section a {
-    color: rgb(51, 113, 55);
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  .ura-link-section a:hover {
-    text-decoration: underline;
   }
 
   /* Facebook post container */
@@ -83,7 +65,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     }
     
     .ura-iframe-container {
-      height: 750px;
+      height: 780px;
     }
   }
 </style>
@@ -132,14 +114,6 @@ school to earn a graduate degree in mathematics. Attached are some links related
         });
       });
     </script>
-
-    <!-- Link to view all fellows -->
-    <div class="ura-link-section">
-      <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" 
-         target="_blank">
-        View all 2025 Fellows →
-      </a>
-    </div>
   </div>
 
   <!-- Facebook Section -->
