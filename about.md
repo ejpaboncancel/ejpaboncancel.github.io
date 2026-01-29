@@ -112,12 +112,39 @@ school to earn a graduate degree in mathematics. Attached are some links related
     <!-- Iframe that scrolls to Eric's profile -->
     <div class="ura-iframe-container">
       <iframe 
-        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7"
+        id="ura-profile-iframe"
+        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/"
         title="Eric J. Pabón Cancel - URA Sandia Fellow Profile"
         scrolling="yes"
         loading="lazy">
       </iframe>
     </div>
+
+    <script>
+      // Try to scroll the iframe to Eric's profile section
+      document.addEventListener('DOMContentLoaded', function() {
+        const iframe = document.getElementById('ura-profile-iframe');
+        
+        // Wait for iframe to load
+        iframe.addEventListener('load', function() {
+          try {
+            // Attempt to access iframe content and scroll to Eric's profile
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const ericProfile = iframeDoc.querySelector('#et_pb_toggle_7');
+            
+            if (ericProfile) {
+              // Scroll the iframe content to Eric's profile
+              ericProfile.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          } catch (e) {
+            // Cross-origin security will likely block this
+            // Fallback: add anchor to URL
+            console.log('Cannot access iframe content due to cross-origin restrictions');
+            iframe.src = 'https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7';
+          }
+        });
+      });
+    </script>
 
     <!-- Link to view all fellows -->
     <div class="ura-link-section">
