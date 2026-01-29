@@ -17,7 +17,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
 <br>
 
 <style>
-  /* ==================== Fellowship Grid ==================== */
+  /* ==================== URA-Style Fellowship Grid ==================== */
   .fellowship-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,64 +32,82 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  .fellowship-card {
-    text-align: center;
+  /* URA-Style Toggle/Accordion */
+  .ura-fellow-card {
+    margin-bottom: 20px;
   }
 
-  .fellowship-card img {
+  .ura-fellow-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ura-fellow-image img {
     width: 100%;
-    max-width: 350px;
+    max-width: 100%;
     height: auto;
-    margin: 0 auto 20px auto;
     display: block;
   }
 
-  .fellow-toggle {
-    background-color: #f4f4f4;
+  .ura-toggle {
     border: 1px solid #d9d9d9;
-    border-radius: 4px;
-    overflow: hidden;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
-  .toggle-header {
+  .ura-toggle-title {
     padding: 20px;
-    cursor: pointer;
+    margin: 0;
     font-weight: 700;
+    font-size: 14px;
     color: #666;
-    background-color: #f4f4f4;
     position: relative;
+    cursor: pointer;
     text-align: center;
   }
 
-  .toggle-header:hover {
-    background-color: #e8e8e8;
-  }
-
-  .toggle-header::after {
-    content: "▼";
+  .ura-toggle-title:before {
+    content: "\25BC"; /* Down arrow */
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 12px;
     color: #ccc;
+    transition: transform 0.3s ease;
   }
 
-  .toggle-content {
+  .ura-toggle.active .ura-toggle-title {
+    color: #333;
+  }
+
+  .ura-toggle.active .ura-toggle-title:before {
+    content: "\25B2"; /* Up arrow */
+  }
+
+  .ura-toggle.active {
+    background-color: #fff;
+  }
+
+  .ura-toggle-content {
     display: none;
     padding: 20px;
     background-color: #fff;
     text-align: justify;
+    line-height: 1.7em;
   }
 
-  .toggle-content.active {
+  .ura-toggle-content p {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .ura-toggle.active .ura-toggle-content {
     display: block;
   }
 
-  .toggle-header.active::after {
-    content: "▲";
-  }
-
+  /* Fellowship Logo */
   .fellowship-logo {
     text-align: center;
     margin-top: 20px;
@@ -103,7 +121,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     margin: 0 auto;
   }
 
-  /* Facebook post container */
+  /* Facebook post container - keeping original */
   .fb-post-container {
     max-width: 100%;
     width: 100%;
@@ -130,15 +148,14 @@ school to earn a graduate degree in mathematics. Attached are some links related
       Learn more about the 2025 Fellows <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" style="color: rgb(51, 113, 55);">here</a>.
     </p>
 
-    <div class="fellowship-card">
-      <img src="https://ura-hq.org/wp-content/uploads/2025/03/Eric-P.jpg" alt="Eric J. Pabón Cancel">
-      <div class="fellow-toggle">
-        <div class="toggle-header" onclick="toggleFellowContent(this)">
-          Eric J. Pabón Cancel, Purdue University
-        </div>
-        <div class="toggle-content">
-          <p style="text-align: justify;">Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.
-          </p>
+    <div class="ura-fellow-card">
+      <div class="ura-fellow-image">
+        <img src="https://ura-hq.org/wp-content/uploads/2025/03/Eric-P.jpg" alt="Eric J. Pabón Cancel">
+      </div>
+      <div class="ura-toggle">
+        <h5 class="ura-toggle-title">Eric J. Pabón Cancel, Purdue University</h5>
+        <div class="ura-toggle-content">
+          <p>Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.</p>
         </div>
       </div>
     </div>
@@ -169,18 +186,26 @@ school to earn a graduate degree in mathematics. Attached are some links related
 </div>
 
 <script>
-  function toggleFellowContent(header) {
-    const content = header.nextElementSibling;
-    const isActive = content.classList.contains('active');
-
-    if (isActive) {
-      content.classList.remove('active');
-      header.classList.remove('active');
-    } else {
-      content.classList.add('active');
-      header.classList.add('active');
-    }
-  }
+  // Toggle functionality for URA-style accordion
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggles = document.querySelectorAll('.ura-toggle');
+    
+    toggles.forEach(function(toggle) {
+      const title = toggle.querySelector('.ura-toggle-title');
+      
+      title.addEventListener('click', function() {
+        // Close other toggles (optional - remove if you want multiple open at once)
+        toggles.forEach(function(otherToggle) {
+          if (otherToggle !== toggle) {
+            otherToggle.classList.remove('active');
+          }
+        });
+        
+        // Toggle current
+        toggle.classList.toggle('active');
+      });
+    });
+  });
 </script>
 
 <br>
