@@ -32,8 +32,10 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  /* URA Profile Card */
-  .ura-profile-card {
+  /* URA Iframe Container */
+  .ura-iframe-container {
+    width: 100%;
+    height: 650px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     overflow: hidden;
@@ -41,71 +43,16 @@ school to earn a graduate degree in mathematics. Attached are some links related
     margin-bottom: 15px;
   }
 
-  .ura-profile-image {
+  .ura-iframe-container iframe {
     width: 100%;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .ura-profile-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .ura-profile-header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
-  }
-
-  .ura-profile-header h5 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 14px;
-    color: #333;
-  }
-
-  .ura-profile-bio {
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.7em;
-    color: #666;
-    font-size: 14px;
-    max-height: 300px;
-    overflow-y: auto;
-  }
-
-  .ura-profile-bio::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .ura-profile-bio::-webkit-scrollbar-track {
-    background: #f4f4f4;
-  }
-
-  .ura-profile-bio::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-  }
-
-  .ura-profile-bio::-webkit-scrollbar-thumb:hover {
-    background: #999;
-  }
-
-  .ura-profile-bio p {
-    margin: 0;
-    padding-bottom: 0;
+    height: 100%;
+    border: none;
   }
 
   .ura-link-section {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .ura-link-section a {
@@ -148,40 +95,35 @@ school to earn a graduate degree in mathematics. Attached are some links related
       gap: 20px;
     }
     
-    .ura-profile-bio {
-      max-height: 250px;
+    .ura-iframe-container {
+      height: 700px;
     }
   }
 </style>
 
 <div class="fellowship-grid">
-  <!-- URA-Sandia Fellowship Section - Profile Card -->
+  <!-- URA-Sandia Fellowship Section - Scrollable iframe to my profile -->
   <div class="fellowship-section">
     <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
     <p style="text-align: justify;">
       Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
     </p>
 
-    <!-- Profile Card -->
-    <div class="ura-profile-card">
-      <div class="ura-profile-image">
-        <img src="https://ura-hq.org/wp-content/uploads/2025/03/Eric-P.jpg" alt="Eric J. Pabón Cancel">
-      </div>
-      
-      <div class="ura-profile-header">
-        <h5>Eric J. Pabón Cancel, Purdue University</h5>
-      </div>
-      
-      <div class="ura-profile-bio">
-        <p>Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.</p>
-      </div>
+    <!-- Iframe that scrolls to Eric's profile -->
+    <div class="ura-iframe-container">
+      <iframe 
+        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7"
+        title="Eric J. Pabón Cancel - URA Sandia Fellow Profile"
+        scrolling="yes"
+        loading="lazy">
+      </iframe>
     </div>
 
-    <!-- Link to full fellowship page -->
+    <!-- Link to view all fellows -->
     <div class="ura-link-section">
       <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" 
          target="_blank">
-        Learn more about the 2025 Fellows →
+        View all 2025 Fellows →
       </a>
     </div>
 
@@ -223,7 +165,7 @@ Final presentation of the research conducted as part of the Summer@ICERM 2022 RE
 <!-- Panopto responsive embed -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 0 auto;">
   <iframe 
-    src="https://brown.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=2e350578-3784-48d7-abfc-aee70108ed63&autoplay=false&offerviewer=true&showtitle=false&showtitle=false&showbrand=false&start=0"
+    src="https://brown.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=2e350578-3784-48d7-abfc-aee70108ed63&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&start=0"
     frameborder="0" allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;">
   </iframe>
