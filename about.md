@@ -32,75 +32,38 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  .fellowship-card {
-    text-align: center;
-  }
-
-  .fellowship-card img {
+  /* URA Iframe Container */
+  .ura-iframe-container {
     width: 100%;
-    max-width: 350px;
-    height: auto;
-    margin: 0 auto 20px auto;
-    display: block;
-  }
-
-  .fellow-toggle {
-    background-color: #f4f4f4;
+    height: 500px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     overflow: hidden;
-  }
-
-  .toggle-header {
-    padding: 20px;
-    cursor: pointer;
-    font-weight: 700;
-    color: #666;
-    background-color: #f4f4f4;
-    position: relative;
-    text-align: center;
-  }
-
-  .toggle-header:hover {
-    background-color: #e8e8e8;
-  }
-
-  .toggle-header::after {
-    content: "▼";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    color: #ccc;
-  }
-
-  .toggle-content {
-    display: none;
-    padding: 20px;
     background-color: #fff;
-    text-align: justify;
+    margin-bottom: 15px;
   }
 
-  .toggle-content.active {
-    display: block;
+  .ura-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 
-  .toggle-header.active::after {
-    content: "▲";
-  }
-
-  .fellowship-logo {
+  .ura-link-section {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
-  .fellowship-logo img {
-    max-width: 100%;
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  .ura-link-section a {
+    color: rgb(51, 113, 55);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .ura-link-section a:hover {
+    text-decoration: underline;
   }
 
   /* Facebook post container */
@@ -118,34 +81,63 @@ school to earn a graduate degree in mathematics. Attached are some links related
       grid-template-columns: 1fr;
       gap: 20px;
     }
+    
+    .ura-iframe-container {
+      height: 600px;
+    }
   }
 </style>
 
 <div class="fellowship-grid">
-  <!-- URA-Sandia Fellowship Section -->
+  <!-- URA-Sandia Fellowship Section - Scrollable iframe to my profile -->
   <div class="fellowship-section">
     <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
     <p style="text-align: justify;">
       Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
-      Learn more about the 2025 Fellows <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" style="color: rgb(51, 113, 55);">here</a>.
     </p>
 
-    <div class="fellowship-card">
-      <img src="https://ura-hq.org/wp-content/uploads/2025/03/Eric-P.jpg" alt="Eric J. Pabón Cancel">
-      <div class="fellow-toggle">
-        <div class="toggle-header" onclick="toggleFellowContent(this)">
-          Eric J. Pabón Cancel, Purdue University
-        </div>
-        <div class="toggle-content">
-          <p style="text-align: justify;">Hello there! I am Eric, a 2nd year PhD student in Mathematics at Purdue University. My current research interests are in Dynamical Systems and Machine Learning methods. My latest research was in Generative Artificial Intelligence and Mathematical Algorithms, where I applied clustering methods and Principal Component Analysis to determine the optimal autoencoder for sequences of unlabeled data. My work at Sandia is on Machine Learning applications for Data Driven Closure Models. I earned my Bachelor of Science degree in Mathematics from the University of Puerto Rico, Mayagüez Campus. After completing my graduate studies, I aspire to become a mathematical research scientist, and outside of academics I like to make origami figures and play percussion instruments.
-          </p>
-        </div>
-      </div>
+    <!-- Iframe that scrolls to Eric's profile -->
+    <div class="ura-iframe-container">
+      <iframe 
+        id="ura-profile-iframe"
+        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/"
+        title="Eric J. Pabón Cancel - URA Sandia Fellow Profile"
+        scrolling="yes"
+        loading="lazy">
+      </iframe>
     </div>
 
-    <div class="fellowship-logo">
-      <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/" target="_blank">
-        <img src="https://ura-hq.org/wp-content/uploads/2025/03/URA-SANDIA-.png" alt="URA Sandia Partnership">
+    <script>
+      // Try to scroll the iframe to Eric's profile section
+      document.addEventListener('DOMContentLoaded', function() {
+        const iframe = document.getElementById('ura-profile-iframe');
+        
+        // Wait for iframe to load
+        iframe.addEventListener('load', function() {
+          try {
+            // Attempt to access iframe content and scroll to Eric's profile
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const ericProfile = iframeDoc.querySelector('#et_pb_toggle_7');
+            
+            if (ericProfile) {
+              // Scroll the iframe content to Eric's profile
+              ericProfile.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          } catch (e) {
+            // Cross-origin security will likely block this
+            // Fallback: add anchor to URL
+            console.log('Cannot access iframe content due to cross-origin restrictions');
+            iframe.src = 'https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7';
+          }
+        });
+      });
+    </script>
+
+    <!-- Link to view all fellows -->
+    <div class="ura-link-section">
+      <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" 
+         target="_blank">
+        View all 2025 Fellows →
       </a>
     </div>
   </div>
@@ -167,21 +159,6 @@ school to earn a graduate degree in mathematics. Attached are some links related
     </div>
   </div>
 </div>
-
-<script>
-  function toggleFellowContent(header) {
-    const content = header.nextElementSibling;
-    const isActive = content.classList.contains('active');
-
-    if (isActive) {
-      content.classList.remove('active');
-      header.classList.remove('active');
-    } else {
-      content.classList.add('active');
-      header.classList.add('active');
-    }
-  }
-</script>
 
 <br>
 <hr>
