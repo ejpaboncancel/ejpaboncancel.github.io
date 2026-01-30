@@ -48,22 +48,6 @@ school to earn a graduate degree in mathematics. Attached are some links related
     border: none;
   }
 
-  /* Facebook Iframe Container - matching URA style */
-  .fb-iframe-container {
-    width: 100%;
-    height: 780px;
-    border: 1px solid #d9d9d9;
-    border-radius: 4px;
-    overflow: hidden;
-    background-color: #fff;
-  }
-
-  .fb-iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .fellowship-grid {
@@ -71,8 +55,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
       gap: 20px;
     }
     
-    .ura-iframe-container,
-    .fb-iframe-container {
+    .ura-iframe-container {
       height: 780px;
     }
   }
@@ -130,16 +113,13 @@ school to earn a graduate degree in mathematics. Attached are some links related
     <p style="text-align: justify;">
       Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
     </p>
-    
-    <!-- Facebook post iframe -->
-    <div class="fb-iframe-container">
-      <iframe 
-        src="https://m.facebook.com/vegabajateinforma/posts/642005397959682"
-        title="Vega Baja Te Informa Facebook Post"
-        scrolling="yes"
-        allow="encrypted-media"
-        loading="lazy">
-      </iframe>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="XYZ"></script>
+    <div class="fb-post" 
+         data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682" 
+         data-show-text="true" 
+         data-width="500"
+         style="margin: 20px auto; text-align: center;">
     </div>
   </div>
 </div>
