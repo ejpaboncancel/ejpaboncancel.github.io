@@ -134,7 +134,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     <!-- Facebook post iframe -->
     <div class="fb-iframe-container">
       <iframe 
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvegabajateinforma%2Fposts%2F642005397959682&show_text=true&width=500"
+        src="https://m.facebook.com/vegabajateinforma/posts/642005397959682"
         title="Vega Baja Te Informa Facebook Post"
         scrolling="yes"
         allow="encrypted-media"
