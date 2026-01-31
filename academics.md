@@ -25,7 +25,7 @@ MA55400: Linear Algebra <br>
 MA51900: Introduction to Probability <br>
 MA57300: Numerical Solutions of Ordinary Differential Equations <br>
 MA59500OT: Computational Optimal Transport and Deep Generative Models <br>
-MA59800ZDS: Topics in Dynamical Systems (Bifurcation Theory) <br>
+MA59800ZY: Topics in Dynamical Systems (Bifurcation Theory) <br>
 MA54600: Introduction to Functional Analysis <br>
 MA59500AFF: Analytic Theory of Function Fields <br>
 MA59500MM: Introduction to Mathematical Modeling <br>
