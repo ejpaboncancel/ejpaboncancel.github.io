@@ -39,13 +39,17 @@ school to earn a graduate degree in mathematics. Attached are some links related
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
     background-color: #fff;
   }
 
   .ura-iframe-container iframe {
     width: 100%;
-    height: 100%;
+    height: 1200px;
     border: none;
+    position: absolute;
+    top: -420px;
+    left: 0;
   }
 
   /* Responsive adjustments */
@@ -54,7 +58,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
       grid-template-columns: 1fr;
       gap: 20px;
     }
-    
+
     .ura-iframe-container {
       height: 780px;
     }
@@ -62,49 +66,21 @@ school to earn a graduate degree in mathematics. Attached are some links related
 </style>
 
 <div class="fellowship-grid">
-  <!-- URA-Sandia Fellowship Section - Scrollable iframe to my profile -->
+
+  <!-- URA-Sandia Fellowship Section -->
   <div class="fellowship-section">
     <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
     <p style="text-align: justify;">
       Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
     </p>
 
-    <!-- Iframe that scrolls to Eric's profile -->
     <div class="ura-iframe-container">
       <iframe 
-        id="ura-profile-iframe"
-        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/"
+        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7"
         title="Eric J. Pabón Cancel - URA Sandia Fellow Profile"
-        scrolling="yes"
         loading="lazy">
       </iframe>
     </div>
-
-    <script>
-      // Try to scroll the iframe to Eric's profile section
-      document.addEventListener('DOMContentLoaded', function() {
-        const iframe = document.getElementById('ura-profile-iframe');
-        
-        // Wait for iframe to load
-        iframe.addEventListener('load', function() {
-          try {
-            // Attempt to access iframe content and scroll to Eric's profile
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-            const ericProfile = iframeDoc.querySelector('#et_pb_toggle_7');
-            
-            if (ericProfile) {
-              // Scroll the iframe content to Eric's profile
-              ericProfile.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          } catch (e) {
-            // Cross-origin security will likely block this
-            // Fallback: add anchor to URL
-            console.log('Cannot access iframe content due to cross-origin restrictions');
-            iframe.src = 'https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7';
-          }
-        });
-      });
-    </script>
   </div>
 
   <!-- Facebook Section -->
@@ -113,8 +89,12 @@ school to earn a graduate degree in mathematics. Attached are some links related
     <p style="text-align: justify;">
       Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
     </p>
+
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="XYZ"></script>
+    <script async defer crossorigin="anonymous" 
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
+    </script>
+
     <div class="fb-post" 
          data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682" 
          data-show-text="true" 
@@ -122,6 +102,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
          style="margin: 20px auto; text-align: center;">
     </div>
   </div>
+
 </div>
 
 <br>
@@ -137,7 +118,8 @@ Final presentation of the research conducted as part of the Summer@ICERM 2022 RE
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 0 auto;">
   <iframe 
     src="https://brown.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=2e350578-3784-48d7-abfc-aee70108ed63&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&start=0"
-    frameborder="0" allowfullscreen
+    frameborder="0"
+    allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;">
   </iframe>
 </div>
