@@ -18,10 +18,13 @@ PR–LSAMP Research Scholarship  (August 2019 – December 2022)<br>
 <hr>
 <br>
 
-## Merits and Honors <br>
+## Merits and Recognitions <br>
+2026 URA STEM Ambassador (March 2026) <br>
 2023 Ford Foundation Predoctoral Fellowship Honorable Mention (March 2023) <br>
 2022 Hispanic Scholarship Fund Scholar  (June 2022) <br>
 National Math Alliance Predoctoral Scholar (November 2021) <br>
 UPRM Faculty of Arts and Sciences Honor Roll (August 2018 – May 2023) <br>
+Puerto Rico Department of Education Math Olympiad, 2nd Place Regional Winner (February 2018) <br>
 National Trig-Star Math Competition, 16th Overall Finalist (June 2017) <br>
-Eagle Scout Rank, with 2 Silver Palms (May 2017)
+Eagle Scout Rank, with 2 Silver Palms (May 2017) <br>
+Puerto Rico Department of Education Math Olympiad, 1st Place District Winner (February 2016, 2017)
