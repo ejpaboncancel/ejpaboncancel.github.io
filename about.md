@@ -32,22 +32,28 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  /* URA Iframe Container */
+  /* URA Iframe Container Fix */
   .ura-iframe-container {
     width: 100%;
     height: 780px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
-    overflow: hidden;
+    /* Enabled scrolling within the container */
+    overflow-y: auto; 
+    overflow-x: hidden;
     position: relative;
     background-color: #fff;
+    /* Improves scrolling on mobile devices */
+    -webkit-overflow-scrolling: touch;
   }
 
   .ura-iframe-container iframe {
     width: 100%;
-    height: 1200px;
+    /* Increased height to ensure all content is rendered inside the scroll area */
+    height: 1600px; 
     border: none;
     position: absolute;
+    /* Maintains the crop to hide the URA header */
     top: -420px;
     left: 0;
   }
@@ -60,7 +66,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     }
 
     .ura-iframe-container {
-      height: 780px;
+      height: 600px; /* Slightly shorter for better mobile viewing */
     }
   }
 </style>
@@ -85,7 +91,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
 
   <!-- Facebook Section -->
   <div class="fellowship-section">
-    <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen historia | Educación</h4>
+    <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen history | Educación</h4>
     <p style="text-align: justify;">
       Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
     </p>
@@ -144,3 +150,4 @@ Interview posted by the UPRM News Organization, <i>Prensa RUM</i>, regarding my 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
   </iframe>
 </div>
+
