@@ -32,22 +32,20 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  /* URA Iframe Container - Height reduced for better page visibility */
+  /* URA Iframe Container */
   .ura-iframe-container {
     width: 100%;
-    height: 450px; /* Reduced from 780px to make the section smaller */
+    height: 780px;
     border: 1px solid #d9d9d9;
     border-radius: 4px;
-    overflow-y: auto; 
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     background-color: #fff;
-    -webkit-overflow-scrolling: touch;
   }
 
   .ura-iframe-container iframe {
     width: 100%;
-    height: 1600px; 
+    height: 1200px;
     border: none;
     position: absolute;
     top: -420px;
@@ -62,7 +60,7 @@ school to earn a graduate degree in mathematics. Attached are some links related
     }
 
     .ura-iframe-container {
-      height: 400px;
+      height: 780px;
     }
   }
 </style>
