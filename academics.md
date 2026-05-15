@@ -19,7 +19,7 @@ MA13900: Mathematics for Elementary Teachers III (Grading) - June 2024–August 
 <br>
 
 ## Graduate Coursework: Purdue University <br>
-MA59800: Theory and Applications of Hamilton-Jacobi Equations <br>
+MA59800ZAE: Theory and Applications of Hamilton-Jacobi Equations <br>
 MA61500: Numerical Methods for Partial Differential Equations <br>
 MA53200: Elements of Stochastic Processes <br>
 MA59800ZAT: Hamiltonian Dynamics <br>
