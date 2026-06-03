@@ -30,16 +30,6 @@ school to earn a graduate degree in mathematics. Attached are some links related
     box-sizing: border-box;
   }
 
-  .fb-embed-container {
-    width: 100%;
-    text-align: center;
-  }
-
-  .fb-embed-container iframe {
-    max-width: 100%;
-    border: none;
-  }
-
   @media (max-width: 768px) {
     .fellowship-grid {
       grid-template-columns: 1fr;
@@ -48,51 +38,45 @@ school to earn a graduate degree in mathematics. Attached are some links related
   }
 </style>
 
+<div id="fb-root"></div>
+
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
+</script>
+
 <div class="fellowship-grid">
 
   <!-- Facebook Post 1 -->
   <div class="fellowship-section">
-    <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> ¡Orgullo en el Barrio Río Abajo, Sector Arenales! </h4>
-    <p style="text-align: justify;">
-      Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, highlighting my continued cultural and academic journey.
-    </p>
+    <h4 style="margin-top: 0; text-align: center;">
+      Vega Baja Te Informa: <br>
+      ¡Orgullo en el Barrio Río Abajo, Sector Arenales!
+    </h4>
 
     <p style="text-align: justify;">
       Article posted by the electronic newspaper of my hometown,
-      <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
+      <i>Vega Baja Te Informa</i>, highlighting my continued cultural and academic journey.
     </p>
 
-    <div class="fb-embed-container">
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvegabajateinforma%2Fposts%2Fpfbid025NAMxKRcysQDjtznMte98PPeEjDouguYp3ybz7Bfve6hRaqWDDbC3QqUVf26T5aHl&show_text=true&width=500"
-        width="500"
-        height="731"
-        style="border:none;overflow:hidden"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-      </iframe>
+    <div class="fb-post"
+         data-href="https://www.facebook.com/vegabajateinforma/posts/pfbid025NAMxKRcysQDjtznMte98PPeEjDouguYp3ybz7Bfve6hRaqWDDbC3QqUVf26T5aHl"
+         data-show-text="true"
+         data-width="500"
+         style="margin: 20px auto;">
     </div>
   </div>
 
   <!-- Facebook Post 2 -->
   <div class="fellowship-section">
-    <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen historia | Educación</h4>
-    <p style="text-align: justify;">
-      Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
-    </p>
+    <h4 style="margin-top: 0; text-align: center;">
+      Vega Baja Te Informa: <br>
+      Vegabajeños que hacen historia | Educación
+    </h4>
 
     <p style="text-align: justify;">
       Article posted by the electronic newspaper of my hometown,
       <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
     </p>
-
-    <div id="fb-root"></div>
-
-    <script async defer crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
-    </script>
 
     <div class="fb-post"
          data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682"
