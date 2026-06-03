@@ -17,7 +17,6 @@ school to earn a graduate degree in mathematics. Attached are some links related
 <br>
 
 <style>
-  /* ==================== Fellowship Grid ==================== */
   .fellowship-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,79 +26,79 @@ school to earn a graduate degree in mathematics. Attached are some links related
   }
 
   .fellowship-section {
-    padding: 0;
     width: 100%;
     box-sizing: border-box;
   }
 
-  /* URA Iframe Container */
-  .ura-iframe-container {
+  .fb-embed-container {
     width: 100%;
-    height: 780px;
-    border: 1px solid #d9d9d9;
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    background-color: #fff;
+    text-align: center;
   }
 
-  .ura-iframe-container iframe {
-    width: 100%;
-    height: 1200px;
+  .fb-embed-container iframe {
+    max-width: 100%;
     border: none;
-    position: absolute;
-    top: -420px;
-    left: 0;
   }
 
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .fellowship-grid {
       grid-template-columns: 1fr;
       gap: 20px;
-    }
-
-    .ura-iframe-container {
-      height: 780px;
     }
   }
 </style>
 
 <div class="fellowship-grid">
 
-  <!-- URA-Sandia Fellowship Section -->
+  <!-- Facebook Post 1 -->
   <div class="fellowship-section">
-    <h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
+    <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> ¡Orgullo en el Barrio Río Abajo, Sector Arenales! </h4>
     <p style="text-align: justify;">
-      Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
+      Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, highlighting my continued cultural and academic journey.
     </p>
 
-    <div class="ura-iframe-container">
-      <iframe 
-        src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/#et_pb_toggle_7"
-        title="Eric J. Pabón Cancel - URA Sandia Fellow Profile"
-        loading="lazy">
+    <p style="text-align: justify;">
+      Article posted by the electronic newspaper of my hometown,
+      <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
+    </p>
+
+    <div class="fb-embed-container">
+      <iframe
+        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvegabajateinforma%2Fposts%2Fpfbid025NAMxKRcysQDjtznMte98PPeEjDouguYp3ybz7Bfve6hRaqWDDbC3QqUVf26T5aHl&show_text=true&width=500"
+        width="500"
+        height="731"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
       </iframe>
     </div>
   </div>
 
-  <!-- Facebook Section -->
+  <!-- Facebook Post 2 -->
   <div class="fellowship-section">
     <h4 style="margin-top: 0; text-align: center;">Vega Baja Te Informa: <br> Vegabajeños que hacen historia | Educación</h4>
     <p style="text-align: justify;">
       Article posted by the electronic newspaper of my hometown, <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
     </p>
 
+    <p style="text-align: justify;">
+      Article posted by the electronic newspaper of my hometown,
+      <i>Vega Baja Te Informa</i>, explaining my cultural and academic journey.
+    </p>
+
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" 
+
+    <script async defer crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
     </script>
 
-    <div class="fb-post" 
-         data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682" 
-         data-show-text="true" 
+    <div class="fb-post"
+         data-href="https://www.facebook.com/vegabajateinforma/posts/642005397959682"
+         data-show-text="true"
          data-width="500"
-         style="margin: 20px auto; text-align: center;">
+         style="margin: 20px auto;">
     </div>
   </div>
 
