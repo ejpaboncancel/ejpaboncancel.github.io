@@ -88,6 +88,40 @@ school to earn a graduate degree in mathematics. Attached are some links related
 
 </div>
 
+
+<br>
+<hr>
+<br>
+
+<h4 style="margin-top: 0; text-align: center;">2025 URA-Sandia Graduate Student Summer Fellowship</h4>
+<p> Article posted by URA, as part of the 2025 cohort of the URA-Sandia Graduate Student Summer Fellowship, a research fellowship program by the Universities Research Association and Sandia National Laboratories.
+Learn more about the 2025 Fellows <a href="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/" style="color: rgb(51, 113, 55);">here</a>.
+<div class="embedded-page-container">
+  <iframe
+    src="https://ura-hq.org/stem-research/sandia-graduate-student-summer-fellowship/2025-sandia-graduate-fellows/"
+    title="2025 URA Sandia Graduate Fellows"
+    loading="lazy">
+  </iframe>
+</div>
+
+<style>
+.embedded-page-container {
+  width: 100%;
+  height: 800px; /* Adjust as desired */
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.embedded-page-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: auto;
+}
+</style>
+
+
 <br>
 <hr>
 <br>
