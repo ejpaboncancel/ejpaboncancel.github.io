@@ -4,7 +4,7 @@ title: Academics
 permalink: /academics/
 ---
 ## Teaching and Grading <br>
-MA26100: Multivariate Calculus (Asynchronous) - June 2026-August 2026 <br>
+MA26100DIS: Multivariate Calculus (Online Asynchronous) - June 2026-August 2026 <br>
 MA59500MB: Mathematical Biology (Grading) - January 2026–May 2026 <br>
 MA32500: History of Mathematics (Grading) - January 2026–May 2026 <br>
 MA26100REC: Multivariate Calculus Recitation (Teaching):
@@ -19,7 +19,7 @@ MA13900: Mathematics for Elementary Teachers III (Grading) - June 2024–August 
 <br>
 
 ## Graduate Coursework: Purdue University <br>
-MA59800ZAE: Theory and Applications of Hamilton-Jacobi Equations <br>
+MA59800ZAE: Hamilton-Jacobi Theory and Applications <br>
 MA61500: Numerical Methods for Partial Differential Equations <br>
 MA53200: Elements of Stochastic Processes <br>
 MA59800ZAT: Hamiltonian Dynamics <br>
