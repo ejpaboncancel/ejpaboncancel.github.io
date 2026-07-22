@@ -3,7 +3,7 @@ layout: page
 title: Hobbies
 permalink: /hobbies/
 ---
-
+## Origami <br>
 <p align="center">
   {% include image.html url="/images/rose.jpg" width=300 align="center" %}
   <br>
