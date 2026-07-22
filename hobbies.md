@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Origami
-permalink: /origami/
+title: Hobbies
+permalink: /hobbies/
 ---
 
 <p align="center">
